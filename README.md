@@ -15,7 +15,10 @@
 (в будущем при реальной работе с тестовым окружением, разработчики будут вместо этого пустого файла копировать на создаваемую ВМ <br>
 свои скрипты и запускать их там). <br>
 <b> Для копирования файла используем "vagrant provision", который позволяет копировать как папки так и файлы. <br>
-config.vm.provision "file", source: "test.txt", destination: "/home/vagrant/test.txt" </b><br><br>
+config.vm.provision "file", source: "test.txt", destination: "/home/vagrant/test.txt" <br>
+Результат: <br>
+vagrant@vagrant:~$ ls /home/vagrant <br>
+test.txt </b><br><br>
 7. Отправьте этот Vagrantfile в созданный в п.1 репозиторий в директорию «6». <br>
 <b> GITHUB URL: https://github.com/Suirus777/sf_practice.git </b><br><br>
 8. Отправьте ментору ссылку на Vagrantfile в вашем репозитории. <br>
